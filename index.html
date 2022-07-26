@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+            <div id="statusBar">
+                <div class="progress">
+                    <p>Trials</p>
+                    <progress max="10" id="trials" value="10"></progress>
+                </div>
+                <div class="progress">
+                    <p>level</p>
+                    <progress max="10" id="level" value="0"></progress>
+                </div>  
+            </div>
+            <div id="gamebox">
+                <button onclick="genRan()" id="start" class="btn">start</button>
+                <input type="number" name="guess" placeholder="from 1 - 20" id="guess">
+                <button id="submit" onclick="checker()" class="btn">guess</button>
+                <p id="report"></p>
+            </div>    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
